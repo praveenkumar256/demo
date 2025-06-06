@@ -1,4 +1,5 @@
-package dsa_java;
+package adddon_dsa;
+
 
 import java.util.Scanner;
 
@@ -34,3 +35,4 @@ public class maxmin {
         sc.close();
     }
 }
+

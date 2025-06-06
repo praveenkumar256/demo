@@ -1,5 +1,4 @@
-package dsa_java;
-
+package adddon_dsa;
 import java.util.Scanner;
 
 public class fact {
@@ -35,3 +34,4 @@ public class fact {
         sc.close();
     }
 }
+
