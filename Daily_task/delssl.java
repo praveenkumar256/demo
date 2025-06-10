@@ -1,19 +1,26 @@
-package adddon_dsa;
+package dsa_java;
 
-import org.w3c.dom.Node;
+//class Node {
+//    int data;
+//    Node next;
+//    
+//    Node(int data) {
+//        this.data = data;
+//    }
+//}
 
-class D3task3 {
-    node head;
+class delssl01 {
+    Node head;
     void insert(int data) {
-        node newnode = new node(data);
+        Node newNode = new Node(data);
         if (head == null) {
-            head = newnode;
+            head = newNode;
             return;
         }
-        node temp = head;
+        Node temp = head;
         while (temp.next != null)
             temp = temp.next;
-        temp.next = newnode;
+        temp.next = newNode;
     }
    void deleteAt(int pos) {
     if (head == null) return;
@@ -23,7 +30,7 @@ class D3task3 {
         return;
     }
 
-    node temp = head;
+    Node temp = head;
     for (int i = 1; i < pos - 1; i++) {
         if (temp == null || temp.next == null) return; 
         temp = temp.next;
@@ -34,7 +41,7 @@ class D3task3 {
 }
 
     void display() {
-        node temp = head;
+        Node temp = head;
         while (temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;
@@ -43,7 +50,7 @@ class D3task3 {
 }
 public class delssl {
     public static void main(String[] args) {
-    	D3task31 list = new D3task3();
+        delssl01 list = new delssl01();
         list.insert(10);
         list.insert(20);
         list.insert(30);
