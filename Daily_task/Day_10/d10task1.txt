@@ -1,0 +1,26 @@
+create database demo;
+use demo;
+CREATE TABLE Stud(
+    NAME VARCHAR(50),
+    mark int,
+    department VARCHAR(15),
+    section char
+);
+
+INSERT INTO Student (NAME, mark, department, section) VALUES
+("Gowdham",100,"Bsc CT","B"),
+("gowthaman",70,"Bsc ECS","A"),
+("Nandagopal",60,"Bsc CS","A"),
+("selva kumar",50,"Bsc CS","C"),
+("Preveen kumar",40,"Bsc CS","A");
+
+select * from stud;
+
+
+output:
+Name            Mark    Department   Section
+Nandagopal	60	Bsc CS	     A
+selva kumar	50	Bsc CS	     C
+Preveen kumar	40	Bsc CS	     A
+Gowdham	       100	Bsc CT	     B
+gowthaman	70	Bsc ECS	     A

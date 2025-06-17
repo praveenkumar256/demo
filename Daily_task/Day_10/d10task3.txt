@@ -1,0 +1,55 @@
+create database demo;
+use demo;
+CREATE TABLE Stud(
+    NAME VARCHAR(50),
+    mark int,
+    department VARCHAR(15),
+    section char
+);
+
+INSERT INTO Student (NAME, mark, department, section) VALUES
+("Gowdham",100,"Bsc CT","B"),
+("gowthaman",70,"Bsc ECS","A"),
+("Nandagopal",60,"Bsc CS","A"),
+("selva kumar",50,"Bsc CS","C"),
+("Preveen kumar",40,"Bsc CS","A");
+
+select * from stud;
+
+
+
+ALTER TABLE Stud ADD Gender char;
+set sql_safe_updates=0;
+UPDATE stud 
+SET Gender='M';
+
+select * from stud;
+
+ALTER TABLE stud DROP COLUMN section;
+
+select * from stud;
+
+
+TRUNCATE TABLE stud;
+
+select * from stud;
+
+DROP database demo;
+
+output:
+Name            Mark    Department   Section	Gender
+Gowdham		100	Bsc CT		B	M
+gowthaman	70	Bsc ECS		A	M
+Nandagopal	60	Bsc CS		A	M
+selva kumar	50	Bsc CS		C	M
+Preveen kumar	40	Bsc CS		A	M
+
+Name            Mark    Department	Gender
+Gowdham		100	Bsc CT		M
+gowthaman	70	Bsc ECS		M
+Nandagopal	60	Bsc CS		M
+selva kumar	50	Bsc CS		M
+Preveen kumar	40	Bsc CS		M
+
+
+Name            Mark    Department	Gender
